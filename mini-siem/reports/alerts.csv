@@ -1,0 +1,8 @@
+severity,rule,ip,username,first_seen,last_seen,count,details
+critical,success_after_fail,203.0.113.12,deploy,2026-11-17 21:15:49,2026-11-17 21:18:45,24,POSSIBLE COMPROMISE: 24 failures then successful login as 'deploy' from 203.0.113.12
+high,brute_force,203.0.113.11,"admin, test, guest",2026-11-17 18:15:31,2026-11-17 18:21:10,78,"78 failed logins from 203.0.113.11 via ssh; targeted: admin, test, guest"
+high,password_spraying,203.0.113.11,39 usernames,2026-11-17 18:15:31,2026-11-17 18:21:10,39,203.0.113.11 tried 39 different usernames (78 attempts)
+high,brute_force,203.0.113.13,,2026-11-17 16:15:30,2026-11-17 16:23:16,120,120 failed logins from 203.0.113.13 via web; targeted: n/a
+high,brute_force,203.0.113.10,"root, oracle, admin",2026-11-17 14:15:30,2026-11-17 14:25:13,240,"240 failed logins from 203.0.113.10 via ssh; targeted: root, oracle, admin"
+high,distributed_attack,multiple,admin,2026-11-17 09:15:31,2026-11-17 09:19:23,15,"account 'admin' attacked from 15 IPs: 198.51.100.20, 198.51.100.21, 198.51.100.22, 198.51.100.23, 198.51.100.24 ..."
+medium,brute_force,203.0.113.12,deploy,2026-11-17 21:15:49,2026-11-17 21:18:03,24,24 failed logins from 203.0.113.12 via ssh; targeted: deploy
